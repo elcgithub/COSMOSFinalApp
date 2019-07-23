@@ -41,7 +41,7 @@ class GameScene: SKScene {
     func touchDown(atPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.green
+            n.strokeColor = SKColor.purple
             self.addChild(n)
         }
     }
@@ -49,7 +49,7 @@ class GameScene: SKScene {
     func touchMoved(toPoint pos : CGPoint) {
         if let n = self.spinnyNode?.copy() as! SKShapeNode? {
             n.position = pos
-            n.strokeColor = SKColor.blue
+            n.strokeColor = SKColor.orange
             self.addChild(n)
         }
     }
